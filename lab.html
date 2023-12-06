@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let fruit = ["яблоко", "груша", "слива", "яблоко", "груша"];
+
+function Print() {
+    document.write("<ul>");
+    for (let i = 0; i < fruit.length; i++) {
+        document.write("<li>" + fruit[i] + "</li>");
+    }
+    document.write("</ul>");
+}
+
+function Search(fruitName) {
+    document.write("indexOf() и lastIndexOf()<br />");
+    // Методы indexOf() и lastIndexOf() возвращают индекс первого и последнего включения элемента в массиве
+    let firstIndex = fruit.indexOf("яблоко");
+    let lastIndex = fruit.lastIndexOf("яблоко");
+     let otherIndex = fruit.indexOf("дыня");
+    document.write( fruitName + "': " + firstIndex + "<br />");
+    document.write( fruitName + "': " + lastIndex + "<br />");
+    document.write( otherIndex + "<br />");
+}
+fruit.sort();
+
+document.write("Отсортированные фрукты:");
+Print();
+
+
+let searchedFruit = "Яблоко";
+Search(searchedFruit);
+
+
+    </script>
+</body>
+</html>
