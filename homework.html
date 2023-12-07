@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Задание 2
+         Создать еще один массив из 5 случайных чисел и написать следующие функции . 
+         1. Функция принимает 2 массива и возвращает новый массив , в котором собраны все элементы из двух массивов без повторений.
+        */
+       
+        // let array1 = [1, 2, 3, 4, 5,6];
+        // let array2 = [6, 7, 8, 9, 10];
+        
+        // ConcatArrayDemo(array1, array2);
+        // FindCommonElements(array1, array2);
+        // ElementsInFirstNotInSecond(array1, array2);
+
+        // function ConcatArrayDemo(array1, array2) {
+        //     /*
+        //     Возвращает массив, полученный в результате конкатенации массива "array1" и
+        //     всех переданных методу значений ("item1", "item2", ...).
+        //     */
+        //     document.write("concat<br />");
+        //     let resultArray = array1.concat(array2);
+            
+        //     document.write("Результат работы метода concat: " + resultArray.join(", "));
+        //     document.write("<br />");
+        // }
+
+        // // 2. Функция принимает 2 массива и возвращает новый массив , в котором собраны общие элементы
+        // // (то есть элементы, которые встречаются и в первом и во втором массивах) без повторений.
+        // function FindCommonElements(array1, array2) {
+        //     let commonElements = [];
+
+        //     for (let i = 0; i < array1.length; i++) {
+        //         for (let j = 0; j < array2.length; j++) {
+        //             if (array1[i] === array2[j]) {
+        //                 commonElements.push(array1[i]);// Добавляет элементы "item1, item2, ..." в конец массива.
+        //             }
+        //         }
+        //     }
+
+        //     document.write("Общие элементы: " + commonElements.join(", "));
+        //     document.write("<br />");
+        // }
+
+
+        // //3. Функция принимает 2 массива и возвращает новый мас сив , в котором собраны все элементы из первого массива , которых нет во втором массиве .
+
+        // function ElementsInFirstNotInSecond(array1, array2) {
+        //     let resultArray = [];
+
+        //     for (let i = 0; i < array1.length; i++) {
+        //         let found = false;
+        //         for (let j = 0; j < array2.length; j++) {
+        //             if (array1[i] === array2[j]) {
+        //                 found = true;
+        //             }
+        //         }
+
+        //         if (!found) {
+        //             resultArray.push(array1[i]);
+        //         }
+        //     }
+
+        //     document.write("Элементы из первого массива, которых нет во втором массиве:", resultArray.join(", "));
+        // }
+
+        
+ 
+ //1. Реализовать простейший вариант теста , поочередно пользователю вопросы , требующие односложных ответов ( " Да " и " Нет " ) .
+        // После прохождения теста вывести результат . Вопросы и оценки за каждый вопрос хранить в сценарии B виде массивов .
+       
+    //     function runSimpleTest()
+    //           {
+    //             let ps=prompt("Начало теста. Отвечайте(Да/Нет)! Нажмите Enter");
+    //             let point = 0;
+    //     let questions = ["C++ хуже Java?", "Женские невидимки реально невидимые?",
+    //         "Стоит ли есть пельмени без сметанки?", "5 дней в неделю проги = 5 заданий?", "Есть ли университет лучше Шага?", 
+    //         "Основное различие между Java и JavaScript в том, что, хотя Java -это язык программирования, JavaScript -язык сценариев,который динамичен, слабо типизирован и имеет первоклассные функции.",
+    //          "Пальмовое масло вредное?", "Есть ли что-то приятнее чем кодить?","Вы любите кофе?"];
+
+    //   let answers = ["Да", "Нет", "Нет", "Нет", "Нет", "Да", "Да", "Нет","Да"];
+
+    //   let your_answ = []; 
+    //     for (let i = 0; i < questions.length; i++) 
+    //     {
+            
+    //         your_answ[i] = prompt(questions[i]);
+    //        if(your_answ[i] == answers[i]){
+    //            point++;    
+    //         }
+    //      }
+
+    //     document.write("Количество правильных ответов: " + point + "/" + questions.length); 
+
+    //       }
+          
+
+
+           // 2. От пользователя требуется ввести ФИО . Необходимо , чтобы сценарий Проверил ввод пользователя на наличие недопустимых символов . 
+        //Недопустимыми символами считать любые символы , кроме букв , пробелов и точек . Эти символы можно задать в сценарии в виде строки .
+
+// do {
+//     let fullName = prompt("Введите ваше ФИО");
+    
+   
+//     if (fullName.indexOf("!@#$%^&*()+=[]{};:<>?/|`~\"'") !== -1) {
+//         alert("Введены недопустимые символы. Пожалуйста, введите ФИО еще раз.");
+//     } else {
+       
+        
+       
+//         if (nameParts.length === 2) {
+//             break;
+//         } else {
+//             alert("Введите полное ФИО (имя и фамилию).");
+//         }
+//     }
+// } while (true);
+
+// alert("Спасибо за сотрудничество!");
+
+
+
+        // 3. Разделить на составные части введенный http - адрес . 
+        //Например , адрес " http://www.ufa.com.ua/utilites/hdd/out.php?sort=2 " делится на следующие составляющие : http : протокол хост путь имя файла строка запроса www.ufa.com.ua / utilites / hdd / out.php sort = 2
+ 
+        
+//         function parseUrl(url) {
+
+//     let protocolIndex = url.indexOf("://");
+//     let protocol = url.slice(0, protocolIndex);
+
+//     let urlWithoutProtocol = url.slice(protocolIndex + 3);
+
+//     let hostIndex = urlWithoutProtocol.indexOf("/");
+//     let host = urlWithoutProtocol.slice(0, hostIndex);
+
+//     let pathAndQueryString = urlWithoutProtocol.slice(hostIndex + 1);
+//     let pathIndex = pathAndQueryString.indexOf("?");
+
+
+//     let path, queryString;
+
+// if (pathIndex !== -1) {
+   
+//     path = pathAndQueryString.slice(0, pathIndex); 
+//     queryString = pathAndQueryString.slice(pathIndex + 1); 
+// } else {
+   
+//     path = pathAndQueryString; 
+//     queryString = ''; 
+// }
+
+//     document.write("<br>Протокол:", protocol);
+//     document.write("<br>Хост:", host);
+//     document.write("<br>Путь:", path);
+//     document.write("<br>Строка запроса:", queryString);
+// }
+
+// let link = "http://www.ufa.com.ua/utilites/hdd/out.php?sort=2";
+// document.write(link + "<br>");
+// parseUrl(link);
+
+
+
+    </script>
+</body>
+</html>
